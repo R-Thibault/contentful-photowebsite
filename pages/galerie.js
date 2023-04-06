@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/header";
-
+import { Footer } from "../components/footer";
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
 import { Galery } from "../components/Galery";
@@ -170,11 +170,7 @@ export default function Home({
           </Tab.Group>
         </div>
       </main>
-      <footer className="h-10 flex justify-center items-center uppercase text-lg font-medium z-20">
-        <p className="uppercase text-lg font-medium">
-          Charles Catin - Photographe
-        </p>
-      </footer>
+      <Footer/>
     </div>
   );
 }

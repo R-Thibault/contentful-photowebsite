@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Header } from '../components/header'
+import { Footer } from "../components/footer";
 
 export default function Home() {
   return (
@@ -19,9 +20,7 @@ export default function Home() {
         <h1 className="lg:col-start-2 col-span-2 text-center text-4xl mx-auto">Charles Catin - Photographe</h1>
 
       </main>
-      <footer className="h-10 flex justify-center items-center z-20">
-        <p>Charles Catin - Photographe</p>
-      </footer>
+      <Footer/>
     </div>
   )
 }

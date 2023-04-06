@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Header } from "../components/header";
 import { createClient } from "contentful";
 import PrestationsCard from "../components/PrestationsCard";
+import { Footer } from "../components/footer";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -25,7 +26,7 @@ export default function Home({ prestations }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="fixed left-0 top-0 w-full h-full z-10 bg-gradient-to-t from-stone-900"></div>
+      <div className="fixed left-0 top-0 w-full h-full z-10 bg-gradient-to-t from-stone-700 to-[#47555E]"></div>
       <Header />
       <main className="relative grow z-20 flex justify-center items-center ">
         <div className=" flex flex-col items-center m-4 space-y-6">
@@ -43,9 +44,7 @@ export default function Home({ prestations }) {
           </div>
         </div>
       </main>
-      <footer className=" h-full flex justify-center items-center z-20">
-        <p className="uppercase text-lg font-medium">Charles Catin - Photographe</p>
-      </footer>
+     <Footer/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Header } from "../components/header";
 import { ContactForm } from "../components/ContactForm";
+import { Footer } from "../components/footer";
 
 export default function Home() {
   return (
@@ -11,13 +12,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="fixed left-0 top-0 w-full h-full z-10 bg-gradient-to-t from-stone-700 to-[#47555E]"></div>
       <Header />
-      <main className="h-full flex justify-center items-center">
+      <main className="h-full flex justify-center items-center z-20">
         <ContactForm />
       </main>
-      <footer className="h-10 flex justify-center items-center">
-        <p>Charles Catin - Photographe</p>
-      </footer>
+      <Footer/>
     </div>
   );
 }
