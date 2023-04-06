@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Header } from '../components/header'
 import {createClient} from 'contentful'
-import PrestationsCard from '../components/prestationsCard'
+import PrestationsCard from '../components/PrestationsCard'
 
 export async function getStaticProps() {
   const client = createClient({
