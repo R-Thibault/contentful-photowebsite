@@ -54,7 +54,7 @@ export function Header() {
            items-center justify-around gap-2 md:gap-5 mx-auto text-lg md:text-2xl"
         >
           {/*  desktop menu */}
-          <nav className="hidden md:flex space-x-8 text-xl " aria-label="main">
+          <nav className="hidden md:flex space-x-[6vw] text-xl " aria-label="main">
             <a href="/" className="hover:text-orange-400 font-medium">
               Accueil
             </a>
@@ -70,7 +70,7 @@ export function Header() {
           </nav>
         </div>
         {/*  mobile menu */}
-        <div className="  absolute flex md:hidden">
+        <div className="  absolute right-6 flex md:hidden">
           <button
             className="flex flex-col h-12 w-12 border-2 border-white rounded justify-center items-center  z-80"
             aria-hidden="true"
@@ -103,7 +103,7 @@ export function Header() {
           {/*  mobile menu */}
           <nav
             className={` h-[83vh] fixed top-[17vh]  flex flex-col  justify-around items-center w-full md:hidden bg-black z-40 duration-1000 ${
-              isOpen ? "right-[0px]" : "right-[-100vw]"
+              isOpen ? "right-[0px]" : "right-[-100%]"
             } `}
             aria-label="main"
           >
