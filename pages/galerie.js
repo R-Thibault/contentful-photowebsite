@@ -132,7 +132,7 @@ export default function Home({
                   {({ selected }) => (
                     <span
                       className={classNames(
-                        "text-lg",
+                        "text-lg", "hover:text-xl" ,
                         selected ? "text-[#fb923c]" : "text-cyan-100"
                       )}
                     >
