@@ -1,13 +1,20 @@
 import React from 'react';
-
+import { useState } from 'react';
 import { Success } from '../components/Success'
 
-export function ContactForm() {
-  
+
+
+
+export default function Form() {
+  const [state, handleSubmit] = useForm("xoqzkywo");
+  if (state.succeeded) {
+      return <Success/>;
+  }
   return (
     <div className="py-6 lg:py-14 px-4 mx-auto max-w-screen-md">
+
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-stone-900">Contactez moi</h2>
-    <form name="contact"  action="/Success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className="space-y-8">      
+      <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} action="https://formspree.io/f/xoqzkywo" className="space-y-8">     
     <input type="hidden" name="form-name" value="contact"/>
       <div>
         <label htmlFor="name" className="block mb-1 text-lg font-medium text-stone-900">Nom:</label> 
@@ -29,5 +36,8 @@ export function ContactForm() {
       </div>
     </form>
     </div>
+
+    
   )
 }
+
