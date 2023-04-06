@@ -7,7 +7,7 @@ export function ContactForm() {
   return (
     <div className="py-6 lg:py-14 px-4 mx-auto max-w-screen-md">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-stone-900">Contactez moi</h2>
-    <form name="contact"  action="/Sucess" method="POST"  className="space-y-8">      
+    <form name="contact"  action="/Sucess" method="POST" data-netlify="true" className="space-y-8">      
     <input type="hidden" name="form-name" value="contact"/>
       <div>
         <label htmlFor="name" className="block mb-1 text-lg font-medium text-stone-900">Nom:</label> 
