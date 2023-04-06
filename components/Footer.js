@@ -10,8 +10,8 @@ export function Footer(){
         </p> 
         <span className="mx-2">© Copyright All rights reserved</span>
         <div className="flex items-center gap-2">
-          <a href="#"><Image width={20}  height={20} src="/iconFacebook.svg" alt="facebook" /></a>
-          <a href="#"><Image width={20}  height={20} src="/iconInstagram.svg" alt="instagram" /></a>
+          <a href="#"><Image width={30}  height={30} src="/iconFacebook.svg" alt="facebook" /></a>
+          <a href="#"><Image width={30}  height={30} src="/iconInstagram.svg" alt="instagram" /></a>
         </div>
       </footer>
     </>

@@ -12,12 +12,12 @@ export async function getStaticProps() {
   const res = await client.getEntries({ content_type: "prestations" });
   return {
     props: {
-      prestations: res.items,
+      prestationsObj: res.items,
     },
   };
 }
 
-export default function Home({ prestations }) {
+export default function Home({ prestationsObj,}) {
   return (
     <div className="min-h-screen lg:h-full flex flex-col bg-[#47555E]  bg-top bg-fixed bg-no-repeat">
       <Head>
@@ -34,7 +34,7 @@ export default function Home({ prestations }) {
             Prestations et Tarifs
           </h1>
           <div className="h-full grid lg:grid-cols-2 gap-16 mb:gap-8">
-            {prestations.map((prestation) => (
+            {prestationsObj.map((prestation) => (
               <PrestationsCard
                 className="h-full"
                 key={prestation.sys.id}
