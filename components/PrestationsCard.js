@@ -5,7 +5,7 @@ export default function PrestationsCard({ prestation }) {
   const { title, imageCard, description } = prestation.fields;
   const { url } = imageCard.fields.file;
   const { width, height } = imageCard.fields.file.details.image;
-
+const {tarif}= prestation.fields;
   return (
     <article className="h-full">
     <div className="flex flex-col sm:flex-row items-center bg-[#47555E] border-stone-700  rounded-lg shadow-xl max-w-xl h-full">
@@ -21,6 +21,7 @@ export default function PrestationsCard({ prestation }) {
         <div className="mb-3 font-normal text-cyan-200">
           {documentToReactComponents(description)}
         </div>
+        <span className="mb-3 font-normal text-cyan-200">Tarif : {tarif}</span>
       </div>
     </div>
     </article>
