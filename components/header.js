@@ -1,17 +1,33 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
+  useEffect(() => {
+    const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setIsOpen(false);
+    }
+  };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+    
+
+  
+
   console.log(isOpen);
 
   return (
     <>
       <header className="flex  w-full flex-row justify-between items-center  px-10 z-30">
-        div
+        
         <div className=" flex justify-between align-middle mx-auto md:mx-2 pt-6 ">
           <Image width={150} height={200} src="/MLogo.png" alt="logo" />
           <div className="flex flex-col p-6 gap-5">
@@ -54,9 +70,9 @@ export function Header() {
           </nav>
         </div>
         {/*  mobile menu */}
-        <div className="  flex md:hidden">
+        <div className="  absolute flex md:hidden">
           <button
-            className=" absolute flex flex-col h-12 w-12 border-2 border-white rounded justify-center items-center group z-80"
+            className="flex flex-col h-12 w-12 border-2 border-white rounded justify-center items-center  z-80"
             aria-hidden="true"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -86,7 +102,7 @@ export function Header() {
 
           {/*  mobile menu */}
           <nav
-            className={` h-[100vh] fixed top-[0px] right-[0px] flex flex-col  justify-around items-center w-full md:hidden bg-black z-40 duration-1000 ${
+            className={` h-[83vh] fixed top-[17vh]  flex flex-col  justify-around items-center w-full md:hidden bg-black z-40 duration-1000 ${
               isOpen ? "right-[0px]" : "right-[-100vw]"
             } `}
             aria-label="main"
