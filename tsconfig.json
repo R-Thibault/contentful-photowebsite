@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,9 +17,14 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/prestations.js", "components/header.js", "pages/contact.js", "components/ContactForm.js", "components/Success.js", "pages/galerie.js", "components/Galery.js"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "pages/prestations.js",
+    "components/Header.js",
+    "pages/contact.js",
+    "components/ContactForm.js",
+    "components/Success.js",
+    "pages/galerie.js",
+    "components/Galery.js"
+  ],
+  "exclude": ["node_modules"]
 }

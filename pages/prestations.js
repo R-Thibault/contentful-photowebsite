@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Header } from "../components/header";
+import { Header } from "../components/Header";
 import { createClient } from "contentful";
 import PrestationsCard from "../components/PrestationsCard";
-import { Footer } from "../components/footer";
+import { Footer } from "../components/Footer";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -44,7 +44,7 @@ export default function Home({ prestations }) {
           </div>
         </div>
       </main>
-     <Footer/>
+      <Footer />
     </div>
   );
 }

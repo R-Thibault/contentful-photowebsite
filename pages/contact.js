@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { Header } from "../components/header";
+import { Header } from "../components/Header";
 import { ContactForm } from "../components/ContactForm";
-import { Footer } from "../components/footer";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <main className="h-full flex justify-center items-center z-20">
         <ContactForm />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

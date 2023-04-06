@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
 import { Galery } from "../components/Galery";
@@ -170,7 +170,7 @@ export default function Home({
           </Tab.Group>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
