@@ -1,9 +1,8 @@
 import React from "react";
-
 import { Success } from "../components/Success";
 import { useForm, ValidationError } from "@formspree/react";
 
-export default function Form() {
+export function ContactForm() {
   const [state, handleSubmit] = useForm("xoqzkywo");
   if (state.succeeded) {
     return <Success />;
@@ -75,12 +74,10 @@ export default function Form() {
         <div>
           <button
             type="submit"
-            disabled={state.submitting}
             className="py-3 px-5 text-lg font-medium text-center text-white rounded-lg bg-stone-900 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
           >
             Envoyer
           </button>
-          <ValidationError errors={state.errors} />
         </div>
       </form>
     </div>

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/header";
-import { Form } from "../components/ContactForm";
+import { ContactForm } from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className="h-full flex justify-center items-center">
-        <Form />
+        <ContactForm />
       </main>
       <footer className="h-10 flex justify-center items-center">
         <p>Charles Catin - Photographe</p>
