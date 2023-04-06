@@ -5,8 +5,8 @@ export function Header (){
 
   return (
     <>
-    <header className=" flex flex-col md:flex-row justify-between items-center  px-10 z-20">
-      <div className="flex justify-between align-middle p-6 ">
+    <header className="flex flex-col md:flex-row justify-between items-center  px-10 z-20">
+      <div className=" flex justify-between align-middle p-6 ">
         <Image width={150}  height={200} src="/MLogo.png" alt="logo" />
         <div className="flex flex-col p-6 gap-5">
           <a href="#"><Image width={30}  height={30} src="/iconFacebook.svg" alt="facebook" /></a>
