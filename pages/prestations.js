@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header } from "../components/Header";
+import { Header } from "../components/header";
 import { createClient } from "contentful";
 import PrestationsCard from "../components/PrestationsCard";
 import { Footer } from "../components/Footer";

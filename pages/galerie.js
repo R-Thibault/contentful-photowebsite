@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header } from "../components/Header";
+import { Header } from "../components/header";
 import { Footer } from "../components/Footer";
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";

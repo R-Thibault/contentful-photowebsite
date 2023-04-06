@@ -19,7 +19,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/prestations.js",
-    "components/Header.js",
+    "components/header.js",
     "pages/contact.js",
     "components/ContactForm.js",
     "components/Success.js",
