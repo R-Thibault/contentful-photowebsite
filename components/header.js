@@ -8,26 +8,20 @@ export function Header() {
 
   useEffect(() => {
     const handleResize = () => {
-    if (window.innerWidth > 768) {
-      setIsOpen(false);
-    }
-  };
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-    
-
-  
-
-  console.log(isOpen);
 
   return (
     <>
       <header className="flex  w-full flex-row justify-between items-center  px-10 z-30">
-        
         <div className=" flex justify-between align-middle mx-auto md:mx-2 pt-6 ">
           <Image width={150} height={200} src="/MLogo.png" alt="logo" />
           <div className="flex flex-col p-6 gap-5">
@@ -54,17 +48,32 @@ export function Header() {
            items-center justify-around gap-2 md:gap-5 mx-auto text-lg md:text-2xl"
         >
           {/*  desktop menu */}
-          <nav className="hidden md:flex space-x-[6vw] text-xl " aria-label="main">
-            <a href="/" className="hover:text-[#fb923c] font-medium hover:text-2xl">
+          <nav
+            className="hidden md:flex space-x-[6vw] text-xl "
+            aria-label="main"
+          >
+            <a
+              href="/"
+              className="hover:text-[#fb923c] font-medium hover:text-2xl"
+            >
               Accueil
             </a>
-            <a href="galerie" className="hover:text-[#fb923c] font-medium hover:text-2xl">
+            <a
+              href="galerie"
+              className="hover:text-[#fb923c] font-medium hover:text-2xl"
+            >
               Galerie
             </a>
-            <a href="prestations" className="hover:text-[#fb923c] font-medium hover:text-2xl">
+            <a
+              href="prestations"
+              className="hover:text-[#fb923c] font-medium hover:text-2xl"
+            >
               Prestations
             </a>
-            <a href="contact" className="hover:text-[#fb923c] font-medium hover:text-2xl">
+            <a
+              href="contact"
+              className="hover:text-[#fb923c] font-medium hover:text-2xl"
+            >
               Contact
             </a>
           </nav>
