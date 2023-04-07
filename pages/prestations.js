@@ -30,7 +30,7 @@ export default function Home({ prestationsObj,}) {
       <Header />
       <main className="relative grow z-20 flex justify-center items-center ">
         <div className=" flex flex-col items-center m-4 space-y-6">
-          <h1 className="mb-2 text-4xl font-bold tracking-tight text-cyan-200">
+          <h1 className="mb-2 text-4xl font-bold tracking-tight text-center text-cyan-200">
             Prestations et Tarifs
           </h1>
           <div className="h-full grid lg:grid-cols-2 gap-16 mb:gap-8">

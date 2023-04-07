@@ -55,16 +55,16 @@ export function Header() {
         >
           {/*  desktop menu */}
           <nav className="hidden md:flex space-x-[6vw] text-xl " aria-label="main">
-            <a href="/" className="hover:text-orange-400 font-medium hover:text-2xl">
+            <a href="/" className="hover:text-[#fb923c] font-medium hover:text-2xl">
               Accueil
             </a>
-            <a href="galerie" className="hover:text-orange-400 font-medium hover:text-2xl">
+            <a href="galerie" className="hover:text-[#fb923c] font-medium hover:text-2xl">
               Galerie
             </a>
-            <a href="prestations" className="hover:text-orange-400 font-medium hover:text-2xl">
+            <a href="prestations" className="hover:text-[#fb923c] font-medium hover:text-2xl">
               Prestations
             </a>
-            <a href="contact" className="hover:text-orange-400 font-medium hover:text-2xl">
+            <a href="contact" className="hover:text-[#fb923c] font-medium hover:text-2xl">
               Contact
             </a>
           </nav>
@@ -107,16 +107,16 @@ export function Header() {
             } `}
             aria-label="main"
           >
-            <a href="/" className="hover:text-orange-400 font-medium ">
+            <a href="/" className="hover:text-[#fb923c] font-medium ">
               Accueil
             </a>
-            <a href="galerie" className="hover:text-orange-400 font-medium">
+            <a href="galerie" className="hover:text-[#fb923c] font-medium">
               Galerie
             </a>
-            <a href="prestations" className="hover:text-orange-400 font-medium">
+            <a href="prestations" className="hover:text-[#fb923c] font-medium">
               Prestations
             </a>
-            <a href="contact" className="hover:text-orange-400 font-medium">
+            <a href="contact" className="hover:text-[#fb923c] font-medium">
               Contact
             </a>
           </nav>

@@ -32,7 +32,7 @@ export function ContactForm() {
             type="text"
             name="name"
             id="name"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p-2.5"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   block w-full p-2.5"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
@@ -48,7 +48,7 @@ export function ContactForm() {
             type="email"
             name="email"
             id="email"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p-2.5"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
@@ -63,7 +63,7 @@ export function ContactForm() {
             required
             name="message"
             id="message"
-            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-orange-400 focus:border-orange-400"
+            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 "
           ></textarea>
           <ValidationError
             prefix="Message"
