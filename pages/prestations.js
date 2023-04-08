@@ -17,7 +17,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ prestationsObj,}) {
+export default function Home({ prestationsObj }) {
   return (
     <div className="min-h-screen lg:h-full flex flex-col bg-[#47555E]  bg-top bg-fixed bg-no-repeat">
       <Head>

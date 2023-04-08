@@ -1,6 +1,5 @@
-
 import Masonry from "react-masonry-css";
-import {useRef}  from "react";
+import { useRef } from "react";
 import Image from "next/image";
 
 import LightGalleryComponent from "lightgallery/react";
@@ -16,34 +15,35 @@ const breakpointColumnsObj = {
   default: 4,
   1100: 3,
   700: 2,
-  500: 1
+  500: 1,
 };
 
-
-export function Galery( {photos}) {
-
+export function Galery({ photos }) {
   const lightboxRef = useRef();
- 
+
   return (
     <>
-      <Masonry breakpointCols={breakpointColumnsObj} className="flex gap-4" columnClassName="">
-      {photos.map((photo, idx) => (
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="flex gap-4"
+        columnClassName=""
+      >
+        {photos.map((photo, idx) => (
           <div className="relative" key={photo.sys.id}>
             <Image
-              src={`https:`+ photo.fields.file.url}
+              src={`https:` + photo.fields.file.url}
               width={photo.fields.file.details.image.width}
               height={photo.fields.file.details.image.height}
               alt={photo.fields.title}
               className="my-4"
             />
-            
+
             <div
               className="absolute inset-0 h-full w-full hover:bg-stone-900 hover:opacity-10 cursor-pointer"
               onClick={() => {
                 lightboxRef.current.openGallery(idx);
               }}
             ></div>
-            
           </div>
         ))}
       </Masonry>
@@ -51,15 +51,15 @@ export function Galery( {photos}) {
       <LightGalleryComponent
         onInit={(ref) => {
           if (ref) {
-            lightboxRef.current = ref.instance ;
+            lightboxRef.current = ref.instance;
           }
         }}
         speed={500}
         plugins={[lgThumbnail, lgZoom]}
         dynamic={true}
-         dynamicEl={photos.map((photo) => ({
-          src: `https:`+ photo.fields.file.url,
-          thumb:`https:`+ photo.fields.file.url,
+        dynamicEl={photos.map((photo) => ({
+          src: `https:` + photo.fields.file.url,
+          thumb: `https:` + photo.fields.file.url,
         }))}
       />
     </>

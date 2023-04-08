@@ -95,7 +95,6 @@ export default function Home({
   familles,
   couples,
   baptemes,
-  
 }) {
   const allPhotos = useMemo(() => {
     const all = [
@@ -122,7 +121,7 @@ export default function Home({
       </Head>
 
       <div className="fixed left-0 top-0 w-full h-full z-10 bg-gradient-to-t from-stone-900"></div>
-      <Header  />
+      <Header />
       <main className="relative grow z-20">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
@@ -132,7 +131,8 @@ export default function Home({
                   {({ selected }) => (
                     <span
                       className={classNames(
-                        "text-lg", "hover:text-xl" ,
+                        "text-lg",
+                        "hover:text-xl",
                         selected ? "text-[#fb923c]" : "text-cyan-100"
                       )}
                     >
