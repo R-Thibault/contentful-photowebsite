@@ -119,13 +119,13 @@ export function Header() {
             <a href="/" className="hover:text-[#fb923c] font-medium ">
               Accueil
             </a>
-            <a href="galerie" className="hover:text-[#fb923c] font-medium">
+            <a href="galerie" className="hover:text-[#fb923c]  text-whitefont-medium">
               Galerie
             </a>
-            <a href="prestations" className="hover:text-[#fb923c] font-medium">
+            <a href="prestations" className="hover:text-[#fb923c] text-white font-medium">
               Prestations
             </a>
-            <a href="contact" className="hover:text-[#fb923c] font-medium">
+            <a href="contact" className="hover:text-[#fb923c]  text-white font-medium">
               Contact
             </a>
           </nav>
