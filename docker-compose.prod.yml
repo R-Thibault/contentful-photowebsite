@@ -1,0 +1,10 @@
+services:
+  contentful-photowebsite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: thibaultr0/priv-repo-thib:contentfulphotowebsite-latest
+    env_file:
+      - .env
+    ports:
+      - "3001:3000"
