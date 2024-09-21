@@ -31,7 +31,7 @@ export function Galery({ photos }) {
         {photos.map((photo, idx) => (
           <div className="relative" key={photo.sys.id}>
             <Image
-              src={`https:` + photo.fields.file.url}
+              src={`https:${photo.fields.file.url}`}
               width={photo.fields.file.details.image.width}
               height={photo.fields.file.details.image.height}
               alt={photo.fields.title}
